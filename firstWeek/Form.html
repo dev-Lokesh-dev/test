@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+        body{
+            
+           
+            background-image: linear-gradient(to right, red,rgb(91, 91, 131),rgb(139, 139, 183),red);
+            width: fit-content;
+            margin:auto;
+        }
+
+        div{
+            background-color: white;
+            width: min-content;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        form > select{
+            width: 100%;
+            padding: 5px;
+        }
+
+        
+
+        form > input:last-of-type{
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            margin-left: 120px;
+        }
+
+        form > input[type="number"],
+        form > input[type="email"],
+        form > input[type="password"],
+        form > input[type="url"]{
+            width: 100%;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h1>Feedback Form</h1>
+    <div>
+        
+    <form action="">
+       <label for="Feedback_type">Feedback Type:</label> <br>
+       <select name="Feedbacks" id="Feedback" required>
+
+            <option value="">Compliment</option>
+            <option value="bug">Bug Report</option>
+            <option value="feature">Feature Request</option>
+            <option value="general">General Feedback</option>
+
+       </select>
+        <br><br>
+
+       <label for="message">Message:</label> 
+       <br>
+       <textarea name="" id="" cols="40" rows="5"></textarea>
+       <br><br>
+
+       <label>Website Rating:</label> <br>
+       <input type="radio" id="rating-1" name="rating" value="1" required>
+       <label for="rating-2">Excellent</label>
+       <input type="radio" id="rating-2" name="rating" value="2">
+       <label for="rating-3">Good</label>
+       <input type="radio" id="rating-3" name="rating" value="3">
+       <label for="rating-4">Averaage</label>
+       <input type="radio" id="rating-4" name="rating" value="4">
+       <label for="rating-5">Poor</label>
+       
+       <br><br>
+
+       <label for="age">Age (10 - 100):</label> <br>
+        <input type="number" id="age" name="age" min="10" max="100" required>
+        <br><br>
+
+       <label for="email">Email*:</label> <br>
+       <input type="email" id="email" name="email" required>
+       <br><br>
+        
+
+       <label for="password">Password (min. 8 characters):</label> <br>
+      <input type="password" id="password" name="password" minlength="8" required>
+        <br><br>
+        
+
+        <label for="website">Your Website (Optional):</label> <br>
+        <input type="url" id="website" name="website">
+        <br><br>
+        
+        <label for="terms">
+        <input type="checkbox" id="terms" name="terms" required>
+                I agree to the terms and conditions
+        </label>
+        <br><br>
+        
+        <input type="submit">
+
+    </form>
+    </div>
+</body>
+</html>
